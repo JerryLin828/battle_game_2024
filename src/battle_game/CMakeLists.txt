@@ -1,7 +1,7 @@
 file(GLOB files *)
 
 foreach(file ${files})
-    if (IS_DIRECTORY ${file})
+    if (IS_DIRECTORY ${file} AND NOT ${file} STREQUAL "${CMAKE_CURRENT_SOURCE_DIR}/CMakeFiles")
         file(RELATIVE_PATH short_name ${CMAKE_CURRENT_SOURCE_DIR} ${file})
         set(COMPONENT_NAME ${short_name})
         add_subdirectory(${file})
