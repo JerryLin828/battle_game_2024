@@ -7,4 +7,11 @@ out
 CMakeSettings.json
 compile_commands.json
 .cache/
-vcpkg_installed/arm64-osx/debug/lib/libglslang.a
+vcpkg_installed/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+vcpkg-bootstrap.log
+vcpkg-manifest-install.log
+.DS_Store
